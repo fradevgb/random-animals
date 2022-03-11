@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  width: 100%;
+  min-height: 80vh;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    gap: 2rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  font-weight: 900;
+  margin: 2.5rem 0;
+}
+
+.degraded-green {
+  color: transparent;
+  background: linear-gradient(to right, #1073ba 0%, #00da55 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+}
+.animal {
+  height: 80vh;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat,
+.fox,
+.dog {
+  height: 90%;
+  width: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  background: rgb(243, 250, 243);
+  border-radius: 2rem;
+}
+
+.item {
+  border-radius: 2rem;
+}
+.get-animals {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 1rem 2rem;
+  outline: none;
+  background: none;
+  border: 0.2rem solid rgb(0, 109, 252);
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+
+  white-space: nowrap;
+}
