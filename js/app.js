@@ -1,6 +1,7 @@
 let cat = document.querySelector('.cat');
 let fox = document.querySelector('.fox');
 let dog = document.querySelector('.dog');
+const chk = document.getElementById('chk');
 
 const catBtn = document.querySelector('.get-cat');
 const foxBtn = document.querySelector('.get-fox');
@@ -9,6 +10,13 @@ const dogBtn = document.querySelector('.get-dog');
 catBtn.addEventListener('click', getRandomCat);
 foxBtn.addEventListener('click', getRandomFox);
 dogBtn.addEventListener('click', getRandomDog);
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+  catBtn.classList.toggle('dark');
+  foxBtn.classList.toggle('dark');
+  dogBtn.classList.toggle('dark');
+});
 
 function getRandomCat() {
   fetch('https://aws.random.cat/meow')

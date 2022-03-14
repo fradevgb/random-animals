@@ -4,30 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random | Imagenes de Animales</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Random | Imágenes de Animales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1 class="title degraded-green">Imágenes Aleatorios de Animales</h1>
+    <h1 class="title degraded-green">Imágenes Aleatorios</h1>
+    <div class="dark-mode">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
     <section class="container">
       <div class="animal">
         <div class="cat"></div>
-        <button class="get-cat">Obtener un imagen Gato</button>
+        <button class="get-cat">Obtener Gato</button>
       </div>
       <div class="animal">
         <div class="fox"></div>
-        <button class="get-fox">Obtener un imagen Zorro</button>
+        <button class="get-fox">Obtener Zorro</button>
       </div>
       <div class="animal">
         <div class="dog"></div>
-        <button class="get-dog">Obtener un imagen Perro</button>
+        <button class="get-dog">Obtener Perro</button>
       </div>
     </section>
 
     <script src="js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c85552bc78.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

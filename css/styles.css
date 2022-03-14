@@ -28,6 +28,7 @@ body {
 }
 
 h1 {
+  font-size: 4.4rem;
   font-weight: 900;
   margin: 2.5rem 0;
 }
@@ -37,6 +38,66 @@ h1 {
   background: linear-gradient(to right, #1073ba 0%, #00da55 100%);
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.dark-mode {
+  padding-left: 4.5rem;
+}
+
+@media (min-width: 768px) { 
+  .dark-mode {
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+  }
+}
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
 }
 
 img {
@@ -64,11 +125,11 @@ img {
   width: auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   background: rgb(243, 250, 243);
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .item {
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 .get-animals {
   display: flex;
@@ -86,4 +147,8 @@ button {
   margin-left: auto;
   margin-right: auto;
   white-space: nowrap;
+}
+
+button.dark {
+  color: #fff;
 }
