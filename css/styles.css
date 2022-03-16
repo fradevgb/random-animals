@@ -41,7 +41,7 @@ h1 {
 }
 
 .dark-mode {
-  padding-left: 4.5rem;
+  padding-left: 60.5rem;
 }
 
 @media (min-width: 768px) { 
@@ -147,6 +147,13 @@ button {
   margin-left: auto;
   margin-right: auto;
   white-space: nowrap;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+button:hover,
+button:focus {
+  box-shadow: inset -5.5em 0 0 0 rgb(0, 109, 252), inset 5.5em 0 0 0 rgb(0, 109, 252);
 }
 
 button.dark {
